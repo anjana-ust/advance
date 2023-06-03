@@ -1,0 +1,10 @@
+package com.ust.rest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class AppConfig {
+	@Autowired
+	private EnvDetails envDetails;
+	
+
+}

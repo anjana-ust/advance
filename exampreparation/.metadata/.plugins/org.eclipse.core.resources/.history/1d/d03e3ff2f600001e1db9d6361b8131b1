@@ -1,0 +1,5 @@
+package com.example.feign.iface;
+
+public interface feigniface {
+
+}

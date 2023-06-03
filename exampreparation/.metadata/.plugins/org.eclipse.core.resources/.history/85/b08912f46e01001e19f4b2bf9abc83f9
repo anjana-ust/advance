@@ -1,0 +1,5 @@
+package com.example.feign.controller;
+
+public class FeignController {
+
+}

@@ -1,0 +1,23 @@
+package com.example.feign.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.example.feign.iface.feigniface;
+import com.example.feign.model.Book;
+
+public class FeignController {
+	@Autowired
+	 private feigniface feignclient;
+	 
+	 																																									//http://localhost:7082/client/allProducts
+	 @GetMapping("/allProducts")
+	 public List<Book> getAll() {
+		 
+		  return feignclient.getProducts();
+	 }
+	 												
+
+}
